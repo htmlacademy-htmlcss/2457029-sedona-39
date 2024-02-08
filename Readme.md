@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Руслан Гайнуллин](https://up.htmlacademy.ru/htmlcss/39/user/2457029).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
+* Сайт: [Седона](https://ruslangnlln.github.io/2457029-sedona-39/).
 
 ---
 
