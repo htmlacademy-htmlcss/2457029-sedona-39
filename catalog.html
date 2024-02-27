@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -25,17 +26,17 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">
+            <a href="#" class="navigation-link icon search-icon">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">
+            <a href="#" class="navigation-link icon heart-icon">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Хочу сюда!</a>
+            <a href="#" class="button button-brown">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -46,8 +47,12 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
         <span class="inner-header-navigation">
-            <img src="#" alt="Иконка дома" class="inner-header-icon">
-            <img src="#" alt="Иконка стрелки" class="inner-header-icon">
+            <span class="icon inner-header-icon-house">
+              <span class="visually-hidden">Иконка дома</span>
+            </span>
+            <span class="icon inner-header-icon-arrow">
+              <span class="visually-hidden">Иконка стрелки</span>
+            </span>
             <span class="inner-header-subtitle">Гостиницы</span>
         </span>
 
@@ -114,8 +119,8 @@
                 </div>
             </fieldset>
 
-            <button class="submit-button" type="submit">Применить</button>
-            <button class="reset-button" type="reset">Сбросить</button>
+            <button class="button submit-button" type="submit">Применить</button>
+            <button class="button reset-button" type="reset">Сбросить</button>
         </form>
     </header>
 
@@ -127,13 +132,13 @@
             <option value="expensive">Сначала дорогие</option>
         </select>
 
-        <a class="button button-selected" href="#">
+        <a class="button button-selected icon icon-table" href="#">
             <span class="visually-hidden">Таблица</span>
         </a>
-        <a href="#" class="button">
+        <a href="#" class="button icon icon-feed">
             <span class="visually-hidden">Лента</span>
         </a>
-        <a href="#" class="button">
+        <a href="#" class="button icon icon-list">
             <span class="visually-hidden">Cписок</span>
         </a>
     </section>
@@ -150,16 +155,24 @@
                 </div>
 
                 <div class="catalog-card-action">
-                    <a class="catalog-card-link button button-brown" href="#">Подпробнее</a>
-                    <a class="catalog-card-link button button-blue" href="#">В Избранное</a>
+                    <a class="catalog-card-link card-button button-brown" href="#">Подпробнее</a>
+                    <a class="catalog-card-link card-button button-blue" href="#">В Избранное</a>
                 </div>
 
                 <div class="catalog-card-rating">
                     <span class="catalog-card-rating-stars">
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
                     </span>
 
                     <span class="catalog-card-rating-number">Рейтинг: 8,5</span>
@@ -176,16 +189,24 @@
                 </div>
 
                 <div class="catalog-card-action">
-                    <a class="catalog-card-link button button-brown" href="#">Подпробнее</a>
-                    <a class="catalog-card-link button button-green" href="#">В Избранном</a>
+                    <a class="catalog-card-link card-button button-brown" href="#">Подпробнее</a>
+                    <a class="catalog-card-link card-button button-green" href="#">В Избранном</a>
                 </div>
 
                 <div class="catalog-card-rating">
                     <span class="catalog-card-rating-stars">
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
                     </span>
 
                     <span class="catalog-card-rating-number">Рейтинг: 9,2</span>
@@ -202,15 +223,21 @@
                 </div>
 
                 <div class="catalog-card-action">
-                    <a class="catalog-card-link button button-brown" href="#">Подпробнее</a>
-                    <a class="catalog-card-link button button-blue" href="#">В Избранное</a>
+                    <a class="catalog-card-link card-button button-brown" href="#">Подпробнее</a>
+                    <a class="catalog-card-link card-button button-blue" href="#">В Избранное</a>
                 </div>
 
                 <div class="catalog-card-rating">
                     <span class="catalog-card-rating-stars">
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
                     </span>
 
                     <span class="catalog-card-rating-number">Рейтинг: 6,9</span>
@@ -227,14 +254,18 @@
                 </div>
 
                 <div class="catalog-card-action">
-                    <a class="catalog-card-link button button-brown" href="#">Подпробнее</a>
-                    <a class="catalog-card-link button button-blue" href="#">В Избранное</a>
+                    <a class="catalog-card-link card-button button-brown" href="#">Подпробнее</a>
+                    <a class="catalog-card-link card-button button-blue" href="#">В Избранное</a>
                 </div>
 
                 <div class="catalog-card-rating">
                     <span class="catalog-card-rating-stars">
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
+                      <span class="icon star-icon">
                         <span class="visually-hidden">*</span>
+                      </span>
                     </span>
 
                     <span class="catalog-card-rating-number">Рейтинг: 5,0</span>
@@ -267,34 +298,36 @@
     </section>
    </main>
 
-    <footer class="page-footer">
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+   <footer class="page-footer">
+    <div class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="icon vk-icon" href="#">
+            <span class="visually-hidden icon vk-icon">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="icon telegram-icon" href="#">
+            <span class="visually-hidden icon telegram-icon">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="icon youtube-icon" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-      <section class="footer-contacts">
-        <p class="footer-contacts-phone">+7 (812) 812-12-12</p>
-      </section>
+    <div class="footer-contacts">
+      <p class="footer-contacts-phone">+7 (812) 812-12-12</p>
+    </div>
 
-      <section class="footer-link">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="#" alt=".htmlacademy"></a>
-      </section>
-    </footer>
+    <div class="footer-link">
+      <a class="icon htmlacademy-link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">.htmlacademy</span>
+      </a>
+    </div>
+  </footer>
   </body>
 </html>
