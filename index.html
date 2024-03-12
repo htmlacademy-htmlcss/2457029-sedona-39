@@ -8,11 +8,12 @@
   <body>
     <header class="page-header">
       <nav  class="navigation">
-        <a href="#" class="main-page-link">
-          <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
-        </a>
-
         <ul class="navigation-list">
+          <li class="navigation-item navigation-logo">
+            <a href="#" class="main-page-link">
+              <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
+            </a>
+          </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">Главная</a>
           </li>
@@ -42,15 +43,18 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index main-container">
       <header class="main-header">
         <h1 class="visually-hidden">SEDONA</h1>
-        <img src="images/index/welcome.svg" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!" class="welcome-omg" width="458" height="352">
+        <img src="images/index/welcome.svg" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!" class="welcome-img" width="458" height="352">
+        <img src="images/index/divider.svg" alt="-" class="divider-img" width="1200" height="57">
       </header>
 
       <section class="advantages">
-        <h2 class="advantages-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="section-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <header class="advantages-header-container">
+          <h2 class="advantages-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="section-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </header>
 
         <ul class="advantages-list">
           <li class="advantages-item blue-item">
@@ -121,7 +125,7 @@
         </button>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe with-background">
         <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
         <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
@@ -137,35 +141,29 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="icon vk-icon" href="#">
-              <span class="visually-hidden icon vk-icon">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="icon telegram-icon" href="#">
-              <span class="visually-hidden icon telegram-icon">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="icon youtube-icon" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="icon vk-icon" href="#">
+            <span class="visually-hidden icon vk-icon">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="icon telegram-icon" href="#">
+            <span class="visually-hidden icon telegram-icon">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="icon youtube-icon" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
 
-      <div class="footer-contacts">
-        <p class="footer-contacts-phone">+7 (812) 812-12-12</p>
-      </div>
+      <p class="footer-contacts-phone">+7 (812) 812-12-12</p>
 
-      <div class="footer-link">
-        <a class="icon htmlacademy-link" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">.htmlacademy</span>
-        </a>
-      </div>
+      <a class="icon htmlacademy-link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">.htmlacademy</span>
+      </a>
     </footer>
   </body>
 </html>
