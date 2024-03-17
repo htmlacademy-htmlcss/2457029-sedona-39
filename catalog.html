@@ -8,12 +8,12 @@
   <body>
     <header class="page-header">
       <nav  class="navigation">
+        <div class="navigation-logo">
+          <a href="#" class="main-page-link">
+            <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
+          </a>
+        </div>
         <ul class="navigation-list">
-          <li class="navigation-item navigation-logo">
-            <a href="#" class="main-page-link">
-              <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
-            </a>
-          </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">Главная</a>
           </li>
@@ -48,13 +48,13 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
         <span class="inner-header-navigation">
-            <span class="icon inner-header-icon-house">
+            <span class="icon inner-header-icon-house inner-header-navigation-item">
               <span class="visually-hidden">Иконка дома</span>
             </span>
-            <span class="icon inner-header-icon-arrow">
+            <span class="icon inner-header-icon-arrow inner-header-navigation-item">
               <span class="visually-hidden">Иконка стрелки</span>
             </span>
-            <span class="inner-header-subtitle">Гостиницы</span>
+            <span class="inner-header-subtitle inner-header-navigation-item">Гостиницы</span>
         </span>
 
         <form class="inner-header-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -111,8 +111,8 @@
 
                 <div class="catalog-filter-range-container">
                   <div class="catalog-filter-range">
-                    <input type="number" placeholder="от" name="price-from">
-                    <input type="number" placeholder="до" name="price-to">
+                    <input class="catalog-filter-range-input" type="number" placeholder="от" name="price-from">
+                    <input class="catalog-filter-range-input" type="number" placeholder="до" name="price-to">
                   </div>
 
                   <div class="catalog-filter-slide">
@@ -308,8 +308,8 @@
             <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email">Email</label>
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <label for="newsletter-email" class="visually-hidden">Email</label>
+              <input class="subscribe-form-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
 
               <button class="button submit-button" type="submit">
                 Подписаться
@@ -322,12 +322,12 @@
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="icon vk-icon" href="#">
-          <span class="visually-hidden icon vk-icon">ВКонтакте</span>
+          <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="icon telegram-icon" href="#">
-          <span class="visually-hidden icon telegram-icon">Телеграм</span>
+          <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="footer-social-item">
