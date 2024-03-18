@@ -8,12 +8,12 @@
   <body>
     <header class="page-header">
       <nav  class="navigation">
+        <div class="navigation-logo">
+          <a href="#" class="main-page-link">
+            <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
+          </a>
+        </div>
         <ul class="navigation-list">
-          <li class="navigation-item navigation-logo">
-            <a href="#" class="main-page-link">
-              <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
-            </a>
-          </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">Главная</a>
           </li>
@@ -60,6 +60,9 @@
           <li class="advantages-item blue-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+
+          <li class="advantages-item image-item">
             <img src="images/index/photo-1.jpg" alt="Картинка с городом" class="advantages-image" width="800" height="385">
           </li>
 
@@ -78,8 +81,11 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
-          <li class="advantages-item blue-item">
+          <li class="advantages-item image-item">
             <img src="images/index/photo-2.jpg" alt="Картинка с каньоном" class="advantages-image" width="800" height="385">
+          </li>
+
+          <li class="advantages-item blue-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -87,8 +93,10 @@
       </section>
 
       <section class="invitation">
-        <h2 class="invitation-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="section-description">Опытный персонал и качественное обслуживание!</p>
+        <header class="invitation-header-container">
+          <h2 class="invitation-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <p class="section-description">Опытный персонал и качественное обслуживание!</p>
+        </header>
 
         <ul class="invitation-list">
           <li class="invitation-item light-blue-item">
@@ -130,11 +138,11 @@
         <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label for="newsletter-email" class="visually-hidden">Email</label>
+          <input class="subscribe-form-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
 
           <button class="button submit-button" type="submit">
-            Подписаться
+              Подписаться
           </button>
         </form>
       </section>
@@ -144,12 +152,12 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="icon vk-icon" href="#">
-            <span class="visually-hidden icon vk-icon">ВКонтакте</span>
+            <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="icon telegram-icon" href="#">
-            <span class="visually-hidden icon telegram-icon">Телеграм</span>
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
