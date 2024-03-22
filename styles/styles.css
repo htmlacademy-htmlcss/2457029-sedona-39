@@ -141,6 +141,11 @@ ul {
     text-align: center;
     text-decoration: none;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-card-rating-number {
@@ -171,16 +176,46 @@ ul {
     background-color: #82B3D3;
 }
 
+.submit-button:hover,
+.button-blue:hover,
+.submit-button:focus,
+.button-blue:focus {
+    background-color: #68A2CA;
+    outline: none;
+}
+
 .reset-button {
     background: none;
+}
+
+.reset-button:hover {
+    opacity: 0.6;
+}
+
+.reset-button:focus {
+    border: #83B3D3 3px solid;
+    outline: none;
 }
 
 .button-brown {
     background-color: #756157;
 }
 
+.button-brown:hover,
+.button-brown:focus {
+    background-color: #615048;
+    outline: none;
+}
+
+
 .button-green {
     background-color: #7DB54F;
+}
+
+.button-green:hover,
+.button-green:focus {
+    background-color: #6C9E42;
+    outline: none;
 }
 
 /* Header */
@@ -504,6 +539,14 @@ h3 {
     line-height: 21px;
 }
 
+.inner-header-subtitle:hover {
+    opacity: 0.6;
+}
+
+.inner-header-subtitle:active {
+    opacity: 0.3;
+}
+
 .inner-header-filter {
     display: grid;
     grid-auto-flow: column;
@@ -561,6 +604,16 @@ h3 {
     font-weight: 700;
     border: solid #F2F2F2;
     padding: 12px 20px;
+}
+
+.catalog-filter-range-input:hover {
+    background-color: #E6E6E6;
+}
+
+.catalog-filter-range-input:focus {
+    background-color: #E6E6E6;
+    border: solid 3px #83B3D3;
+    outline: none;
 }
 
 .catalog-filter-range-input:first-of-type {
@@ -630,8 +683,15 @@ h3 {
     border: solid 2px #E5E5E5;
 }
 
+.sort-button:hover,
+.sort-button:active,
 .button-selected {
     border: solid 2px black;
+}
+
+.sort-button:focus {
+    border: solid 2px #68A2CA;
+    outline: none;
 }
 
 .sort-button:first-of-type {
@@ -643,6 +703,12 @@ h3 {
     padding: 14px 20px;
     border-radius: 4px;
     border: solid 2px #E5E5E5;
+}
+
+.catalog-sort-selector:hover,
+.catalog-sort-selector:focus {
+    border: solid 2px #68A2CA;
+    outline: none;
 }
 
 .catalog-filter-item {
@@ -706,6 +772,7 @@ h3 {
 }
 
 .pagination-button {
+    padding: 0;
     width: 60px;
     height: 60px;
     font-size: 20px;
