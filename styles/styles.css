@@ -66,14 +66,6 @@ ul {
     display: block;
 }
 
-.search-icon {
-    background-image: url("../images/icons/search.svg");
-}
-
-.heart-icon {
-    background-image: url("../images/icons/heart.svg");
-}
-
 .icon-house {
     background-image: url("../images/index/house-icon.svg");
 }
@@ -151,6 +143,20 @@ ul {
     color: #ffffff;
 }
 
+.catalog-card-rating-number {
+    font-weight: 400;
+}
+
+.submit-button {
+    border-radius: 0 4px 4px 0;
+}
+
+.button-big,
+.submit-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
 .card-button,
 .catalog-card-rating-number {
     padding: 8px 0;
@@ -182,7 +188,7 @@ ul {
 .navigation {
     display: flex;
     padding: 0 70px;
-    /* height: 64px; */
+    height: 64px;
     background-color: #ffffff;
 }
 
@@ -213,13 +219,28 @@ ul {
     text-decoration: none;
 }
 
+.navigation-link.selected {
+    padding: 20px 0 17px;
+    border-bottom: solid #756257 2px;
+}
+
 .navigation-logo {
     margin: 0;
+    z-index: 1;
 }
 
 .navigation-user .navigation-link {
     min-width: 20px;
     min-height: 20px;
+    padding: 20px
+}
+
+.navigation-user .navigation-item {
+    margin: 0;
+}
+
+.navigation-user .navigation-button {
+    margin-left: 13px;
 }
 
 /* Main page */
@@ -253,6 +274,11 @@ h2 {
 .section-description {
     font-size: 22px;
     line-height: 26px;
+    margin: 20px 0 0;
+}
+
+.header-section-description {
+    margin: 25px 0 0;
 }
 
 /* Advantages list */
@@ -262,9 +288,12 @@ h2 {
     text-align: center;
 }
 
-.advantages-header-container,
-.invitation-header-container {
+.advantages-header-container {
     padding: 69px 0;
+}
+
+.invitation-header-container {
+    padding: 64px 0;
 }
 
 .advantages-header {
@@ -275,10 +304,12 @@ h2 {
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 21px;
 }
 
 .advantages-item,
 .invitation-item {
+    width: 230px;
     height: 385px;
     display: flex;
     flex-direction: column;
@@ -288,8 +319,21 @@ h2 {
     text-align: center
 }
 
+.advantages-item-delimeter {
+    width: 60px;
+    height: 2px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item.blue-item > .advantages-item-delimeter
+{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .advantages-item.image-item {
     padding: 0;
+    width: 800px;
 }
 
 .advantages-item {
@@ -312,14 +356,15 @@ h3 {
     font-size: 18px;
     line-height: 21px;
     max-width: 230px;
+    margin: 0;
 }
 
-.blue-item {
+.advantages-item.blue-item {
     background-color: #82B3D3;
     color: #ffffff;
 }
 
-.light-blue-item {
+.advantages-item.light-blue-item {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -338,9 +383,17 @@ h3 {
     display: flex;
 }
 
+.invitation-item.light-blue-item {
+    background-color: rgba(131, 179, 211, 0.12)
+}
+
 .invitation-item-icon {
     width: 76px;
     height: 76px;
+}
+
+.invitation-title {
+    margin: 30px auto;
 }
 
 .appointment {
@@ -377,9 +430,12 @@ h3 {
 }
 
 .subscribe-form-input {
+    background-color: #F2F2F2;
     font-size: 18px;
     padding: 12px 20px;
     flex-grow: 1;
+    border: #F2F2F2 solid;
+    border-radius: 4px 0 0 4px;
 }
 
 /* Footer */
@@ -399,7 +455,6 @@ h3 {
     width: 24px;
     height: 18px;
     margin-right: 20px;
-    margin-bottom: 10px;
 }
 
 .htmlacademy-link {
@@ -478,6 +533,16 @@ h3 {
 
 .filter-control {
     grid-column: span 3;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.control-input {
+    margin: 0 16px 0 0;
+    width: 20px;
+    height: 20px;
 }
 
 .catalog-filter-range {
@@ -485,10 +550,25 @@ h3 {
     grid-row: 2 / 4;
     margin-bottom: 8px;
     display: flex;
+    justify-content: space-between;
 }
 
 .catalog-filter-range-input {
-    width: 50%;
+    background-color: #F2F2F2;
+    width: 103px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: solid #F2F2F2;
+    padding: 12px 20px;
+}
+
+.catalog-filter-range-input:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-range-input:last-of-type {
+    border-radius: 0 4px 4px 0;
 }
 
 .catalog-filter-slide-input {
@@ -534,6 +614,7 @@ h3 {
     margin: 50px 70px 0 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .catalog-sort-buttons {
@@ -633,6 +714,7 @@ h3 {
     color: #ffffff;
     border: none;
     border-radius: 4px;
+    font-weight: 700;
 }
 
 .pagination-divider {
