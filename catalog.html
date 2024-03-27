@@ -6,22 +6,22 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav  class="navigation">
         <div class="navigation-logo">
-          <a href="/" class="main-page-link">
+          <a href="#" class="main-page-link">
             <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140" height="70">
           </a>
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="/" class="navigation-link">Главная</a>
+            <a href="#" class="navigation-link selected">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link selected">Гостиницы</a>
+            <a href="catalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
 
@@ -40,6 +40,7 @@
                 <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" fill="black"/>
               </svg>
               <span class="visually-hidden">Избранное</span>
+              <div class="favorite-count">12</div>
             </a>
           </li>
           <li class="navigation-item navigation-button">
@@ -49,7 +50,7 @@
       </nav>
     </header>
 
-   <main class="main-inner main-container">
+   <main class="main-inner main-container" data-test="main">
     <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
@@ -63,7 +64,7 @@
             <span class="inner-header-subtitle inner-header-navigation-item">Гостиницы</span>
         </span>
 
-        <form class="inner-header-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="inner-header-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
           <span class="catalog-filter-title catalog-filter-title-infractructure">Инфраструктура:</span>
           <label class="filter-control">
             <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
@@ -81,7 +82,7 @@
             <span class="control-label">Wi-Fi</span>
           </label>
 
-          <span class="catalog-filter-title catalog-filter-title-type">Тип жилья:</span>
+          <span class="catalog-filter-title catalog-filter-title-type">Тип Жилья:</span>
 
           <label class="filter-control">
             <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
@@ -123,7 +124,7 @@
     </header>
 
     <section class="catalog-list-sort">
-        <h2 class="catalog-list-title">Найдено гостиниц: 38</h2>
+        <h2 class="catalog-list-title section-header">Найдено гостиниц: 38</h2>
 
         <div class="catalog-sort-buttons">
           <select class="catalog-sort-selector">
@@ -134,17 +135,17 @@
           <a class="sort-button button-selected icon icon-table" href="#">
             <span class="visually-hidden">Таблица</span>
           </a>
-          <a href="#" class="sort-button icon icon-feed">
-              <span class="visually-hidden">Лента</span>
-          </a>
           <a href="#" class="sort-button icon icon-list">
               <span class="visually-hidden">Cписок</span>
+          </a>
+          <a href="#" class="sort-button icon icon-feed">
+            <span class="visually-hidden">Лента</span>
           </a>
         </div>
     </section>
 
 
-        <ul class="catalog-list">
+        <ul class="list catalog-list" data-test="catalog">
             <li class="catalog-card">
                 <img class="catalog-card-image" src="images/catalog/hotel-1.jpg" alt="Фото отеля 1" width="300" height="212">
                 <h3 class="catalog-card-title">Amara Resort & Spa</h3>
@@ -227,7 +228,7 @@
 
             <li class="catalog-card">
                 <img class="catalog-card-image" src="images/catalog/hotel-4.jpg" alt="Фото отеля 4" width="300" height="212">
-                <h3 class="catalog-card-title">Desert Quail Inn</h3>
+                <h3 class="catalog-card-title">GreenTree Inn</h3>
 
                 <span class="catalog-card-type">Гостиница</span>
                 <span class="catalog-card-price">От 1500 ₽</span>
@@ -250,29 +251,29 @@
 
 
 
-        <ul class="pagination-list">
+        <ul class="list pagination-list">
             <li class="pagination-item">
               <button class="button pagination-button pagination-current">1</button>
             </li>
             <li class="pagination-item">
-              <button class="button button-blue pagination-button" href="#">2</button>
+              <button class="button button-blue pagination-button">2</button>
             </li>
             <li class="pagination-item">
-              <button class="button button-blue pagination-button" href="#">3</button>
+              <button class="button button-blue pagination-button">3</button>
             </li>
             <li class="pagination-item">
-              <button class="button button-blue pagination-button" href="#">4</button>
+              <button class="button button-blue pagination-button">4</button>
             </li>
             <li class="pagination-item pagination-divider">
               ...
             </li>
             <li class="pagination-item">
-              <button class="button button-blue pagination-button" href="#">10</button>
+              <button class="button button-blue pagination-button">10</button>
             </li>
           </ul>
 
-          <section class="subscribe">
-            <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+          <section class="subscribe" data-test="subscribe">
+            <h2 class="section-header subscribe-header">Подпишитесь на рассылку</h2>
             <p class="section-description">Только полезная информация и никакого спама,<br/> честное бойскаутское!</p>
 
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -286,7 +287,7 @@
           </section>
    </main>
 
-   <footer class="page-footer">
+   <footer class="page-footer" data-test="footer">
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="icon vk-icon" href="#">
