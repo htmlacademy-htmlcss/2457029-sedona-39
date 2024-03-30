@@ -774,7 +774,7 @@ body {
     height: 10px;
     background-color: #3F5E72;
     border-radius: 50%;
-    content: '';
+    content: "";
 }
 
 .catalog-filter-range {
