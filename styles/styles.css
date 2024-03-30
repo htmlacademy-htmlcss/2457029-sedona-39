@@ -318,15 +318,6 @@ body {
     clip-path: polygon(50% 0%, 100% 0, 100% 88%, 79% 93.5%, 79% 88.5%, 50% 100%, 21% 88.5%, 21% 93.5%, 0 88%, 0 0);
 }
 
-.divider-img {
-    position: absolute;
-    display: block;
-    background-image: url("../images/index/divider.svg");
-    height: 57px;
-    width: 1200px;
-    bottom: 0;
-}
-
 .section-header {
     text-transform: uppercase;
     font-size: 30px;
@@ -950,7 +941,7 @@ body {
 }
 
 .catalog-sort-selector {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     height: 46px;
     width: 292px;
     padding: 12px 19px;
