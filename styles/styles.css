@@ -213,11 +213,11 @@ body {
     padding: 0 70px;
     min-height: 64px;
     background-color: #ffffff;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
-.navigation-inner {
+.navigation-left {
     display: flex;
 }
 
@@ -227,11 +227,13 @@ body {
     flex-wrap: wrap;
     padding: 0;
     gap: 0 32px;
-    max-width: 50%;
+    width: 470px;
 }
 
 .navigation-user {
-    gap: 0
+    gap: 0;
+    max-width: 50%;
+    justify-content: flex-end;
 }
 
 .navigation-item {
@@ -259,7 +261,7 @@ body {
 
 .navigation-logo {
     max-height: 64px;
-    margin: 0 12px 0 0;
+    margin: 0 44px 0 0;
     z-index: 1;
     display: block;
 }
@@ -307,7 +309,7 @@ body {
     background-image: url("../images/index/sedona-background.jpg");
     color: #ffffff;
     background-color: #81B3D3;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -315,8 +317,17 @@ body {
     justify-content: center;
     position: relative;
     padding: 51px 0 82px;
-    clip-path: polygon(50% 0%, 100% 0, 100% 88%, 79% 93.5%, 79% 88.5%, 50% 100%, 21% 88.5%, 21% 93.5%, 0 88%, 0 0);
 }
+
+.main-header::after {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    height: 57px;
+    background-image: url("../images/index/divider.svg");
+    content: "";
+}
+
 
 .section-header {
     text-transform: uppercase;
@@ -774,7 +785,7 @@ body {
     height: 10px;
     background-color: #3F5E72;
     border-radius: 50%;
-    content: '';
+    content: "";
 }
 
 .catalog-filter-range {
