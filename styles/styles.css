@@ -255,8 +255,18 @@ body {
 }
 
 .navigation-item.selected {
-    border-bottom: solid #756257 2px;
-    height: 62px;
+    position: relative;
+}
+
+.navigation-item.selected::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    background-color: #756257;
+    z-index: 1;
 }
 
 .navigation-logo {
